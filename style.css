@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #a6bff14b;
+    font-family: 'Nunito', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+
+/* This style for main logo */
+.logo {
+    display: flex;
+}
+
+.logo img {
+    height: 137px;
+    margin: 35px;
+    padding: 8px;
+    padding-left: 33px;
+}
+@media screen and (max-width:480px){
+    .logo img{
+    height: 84px;
+    margin: 69px;
+    padding: -7px;
+    padding-left: 54px;
+    margin-left: -29px;
+    margin-top: 8px; 
+    }
+}
+
+.logo h1 {
+    text-align: center;
+    margin-top: 68px;
+    margin-left: -28px;
+    color: #1e4797;
+}
+
+@media screen and (max-width:480px){
+    .logo h1{
+        margin-top: 5px;
+        margin-left: -52px;     
+    }
+}
+
+
+.logo p {
+    text-align: center;
+    margin-top: 111px;
+    color: #1e4797;
+    margin-left: -313px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+
+
+/* This style is for navbar and subnavbar */
+.menubar {
+    background-color: #1e4797;
+    text-align: center;
+}
+
+@media screen and (max-width:1315px) {
+    .menubar {
+        width: 1500px;
+
+    }
+}
+
+.menubar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+    /* height: 45px; */
+}
+
+.menubar ul li {
+    width: 130px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.menubar ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+
+/* .menubar ul li :hover{
+    background-color:#2f86dd;
+} */
+.submenu1 {
+    display: none;
+    text-transform: uppercase;
+    font-size: 13px;
+
+}
+
+.submenu2 {
+    display: none;
+    text-transform: uppercase;
+    font-size: 13px;
+
+}
+
+.submenu3 {
+    display: none;
+    text-transform: uppercase;
+    font-size: 13px;
+
+}
+
+.submenu4 {
+    display: none;
+    text-transform: uppercase;
+    font-size: 13px;
+
+}
+
+.menubar ul li:hover .submenu1 {
+    display: block;
+    position: absolute;
+    background-color: #1e4797;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.menubar ul li:hover .submenu2 {
+    display: block;
+    position: absolute;
+    background-color: #1e4797;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.menubar ul li:hover .submenu3 {
+    display: block;
+    position: absolute;
+    background-color: #1e4797;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.menubar ul li:hover .submenu4 {
+    display: block;
+    position: absolute;
+    background-color: #1e4797;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.menubar ul li:hover .submenu1 ul {
+    display: block;
+    margin: 5px;
+}
+
+.menubar ul li:hover .submenu2 ul {
+    display: block;
+    margin: 5px;
+}
+
+.menubar ul li:hover .submenu3 ul {
+    display: block;
+    margin: 5px;
+}
+
+.menubar ul li:hover .submenu4 ul {
+    display: block;
+    margin: 5px;
+}
+
+.menubar ul li:hover .submenu1 ul li {
+    border-bottom: 1px dotted white;
+}
+
+.menubar ul li:hover .submenu2 ul li {
+    border-bottom: 1px dotted white;
+}
+
+.menubar ul li:hover .submenu3 ul li {
+    border-bottom: 1px dotted white;
+}
+
+.menubar ul li:hover .submenu4 ul li {
+    border-bottom: 1px dotted white;
+}
+
+.submenu1 ul li a:hover {
+    background-color: red;
+}
+
+.submenu2 ul li a:hover {
+    background-color: red;
+}
+
+.submenu3 ul li a:hover {
+    background-color: red;
+}
+
+.submenu4 ul li a:hover {
+    background-color: red;
+}
+
+/* this style is for imgsection */
+.imgsection {
+    width: 36%;
+    margin-top: 34px;
+    border-radius: 4px;
+    margin-left: 34px;
+    height: 334px;
+    background-image: url('img/logo.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* box-shadow: rgb(149, 157, 165, 0.2) 0px 8px 23px; */
+    animation: ChangeImg 30s linear infinite;
+}
+
+@keyframes ChangeImg {
+    0% {
+        background-image: url('img/university1.jpg');
+    }
+
+    25% {
+        background-image: url('img/uni1.jpg');
+
+    }
+
+    50% {
+        background-image: url('img/logo.png');
+    }
+
+    75% {
+        background-image: url('img/university4.jpg');
+
+    }
+
+    100% {
+        background-image: url('img/uni.jpg');
+
+    }
+}
+
+@media screen and (max-width:700px) {
+    .imgsection {
+        width: 62%;
+        margin-top: 53px;
+        margin-left: 43px;
+        height: 365px;
+
+        
+    }
+}
+@media screen and (max-width:480px) {
+    .imgsection {
+        width: 83%;
+        margin-top: 68px;
+        margin-left: 33px;
+        height: 388px;
+
+        
+    }
+}
+
+@media screen and (max-width:310px) {
+    .imgsection {
+        width: 166%;
+        margin-top: 79px;
+        margin-left: 49px;
+        height: 444px;
+
+    }
+}
+
+/* this style for scroll bar  */
+.scroll {
+
+    margin-left: 943px;
+    margin-top: -339px;
+    overflow-x: hidden;
+    height: 175px;
+    width: 460px;
+}
+
+@media screen and (max-width:849px) {
+    .scroll {
+         margin-left: 600px;
+        margin-top: -339px;
+        overflow-x: hidden;
+        height: 1175px;
+        width: 560px;
+        font-size: 33px; 
+
+    }
+}
+@media screen and (max-width:480px) {
+    .scroll {
+        margin-left: 2px;
+        margin-top: 47px;
+        overflow-x: hidden;
+        height: 1108px;
+        width: 442px;
+        font-size: 23px;
+
+    }
+}
+
+.scroll h2 {
+    color: #1e4797;
+    font-size: 34px;
+}
+
+/* div{
+    overflow-x: hidden;
+    
+} */
+.scrollbar1,
+.scrollbar2,
+.scrollbar3,
+.scrollbar4:hover {
+    cursor: pointer;
+}
+
+.scrollbar1 {
+    background-color: white;
+    margin-left: 10px;
+}
+
+.scrollbar2 {
+    background-color: white;
+    margin-left: 10px;
+}
+
+.scrollbar3 {
+    background-color: white;
+    margin-left: 10px;
+}
+
+.scrollbar4 {
+    background-color: white;
+    margin-left: 10px;
+}
+
+.scrollbar5 {
+    background-color: white;
+    margin-left: 10px;
+}
+
+.scrollbar1,
+.scrollbar2,
+.scrollbar3,
+.scrollbar4,
+.scrollbar5,
+h4,
+p {
+    margin-left: 34px;
+}
+
+h4 {
+    color: #1e4797;
+}
+
+.PU {
+    background-color: rgba(0, 0, 0, 0.397);
+    margin-left: 34px;
+    margin-right: 924px;
+    height: 43px;
+    margin-top: 125px;
+}
+@media screen and (max-width:1300px){
+    .PU{
+        margin-left: 35px;
+        margin-right: 854px;
+        height: 43px;
+        margin-top: 123px;
+
+    }
+}
+@media screen and (max-width:1100px){
+    .PU{
+        margin-left: 35px;
+        margin-right: 588px;
+        height: 43px;
+        margin-top: 123px;
+      
+    }
+}
+
+
+.PU h6 {
+    margin-left: 34px;
+    color: white;
+    font-size: 24px;
+}
+@media screen and (max-width:480px){
+    .PU h6{
+      font-size: 0px;
+      
+    }
+}
+/* This style is for botton */
+.btn {
+    text-align: center;
+    margin-left: 1224px;
+    margin-top: -130px;
+    background-color: #1e4797;
+    width: 159px;
+    height: 46px;
+    border-radius: 5px;
+    color: white;
+}
+
+span {
+    position: absolute;
+    margin-top: 11px;
+    margin-left: -44px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+/* this style is for moving text */
+.moving-text {
+    margin: 80px;
+    background-color: white;
+    padding: 22px;
+    box-shadow: 10px 10px 10px grey;
+}
+
+@media screen and (max-width:1282px) {
+    .moving-text{
+        width: 1600px;
+        
+    }    
+}
+@media screen and (max-width:480px) {
+    .moving-text{
+        width: 401px;
+        margin: -1px;
+        margin-top: -364px
+    }    
+}
+
+.result {
+    margin-left: -21px;
+    position: absolute;
+    margin-top: -37px;
+    background-color: white;
+    width: 212px;
+    height: 42px;
+}
+
+
+
+.result h3 {
+    margin-top: 10px;
+    margin-left: 13px;
+    color: #1e4797;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* This style is for second moving text */
+
+.moving-text2 {
+    margin: 80px;
+    background-color: white;
+    padding: 22px;
+    box-shadow: 10px 10px 10px grey;
+}
+@media screen and (max-width:480px) {
+    .moving-text2{
+        width: 382px;
+        margin-left: -7px;
+    }    
+}
+@media screen and (max-width:1282px) {
+    .moving-text2{
+        width: 1600px;
+        
+    }    
+}
+
+.result2 {
+    margin-left: -21px;
+    position: absolute;
+    margin-top: -38px;
+    background-color: white;
+    width: 212px;
+    height: 42px;
+}
+
+.result2 h3 {
+    margin-top: 10px;
+    margin-left: 13px;
+    color: #1e4797;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* this style is for btn2 view all result btn */
+.btn2color {
+    margin-left: 1184px;
+    position: absolute;
+    margin-top: -133px;
+    background-color: white;
+    width: 238px;
+    height: 42px;
+
+}
+
+.btn2 {
+    text-align: center;
+    margin-left: 41px;
+    margin-top: -6px;
+    background-color: #1e4797;
+    width: 159px;
+    height: 46px;
+    border-radius: 5px;
+    color: white;
+}
+
+.btn2 h3 {
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 11px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+/* this style is for btn3 */
+.btn3color {
+    margin-left: 1184px;
+    position: absolute;
+    margin-top: -133px;
+    background-color: white;
+    width: 238px;
+    height: 42px;
+
+}
+
+.btn3 {
+    text-align: center;
+    margin-left: 41px;
+    margin-top: -6px;
+    background-color: #1e4797;
+    width: 159px;
+    height: 46px;
+    border-radius: 5px;
+    color: white;
+}
+
+.btn3 h3 {
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 11px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+marquee {
+    color: #1e4797;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #1e4797;
+    padding: 23px;
+}
+
+footer h3 {
+    color: white;
+    margin-left: 60px;
+}
+
+@media screen and (max-width:1380px) {
+    footer {
+        width: 1500px;
+    }
+}
+@media screen and (max-width:480px) {
+    footer {
+        width:400px;
+    }
+}
+
+/* this is style is for social icon */
+/* .social-icon{
+    display: flex;
+}
+
+.social-icon img {
+    height: 34px;
+    margin-left: 23px;
+    margin-top: 26px;
+} */
